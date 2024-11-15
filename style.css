@@ -235,7 +235,9 @@ input[type=submit]:hover{
     .li {
       display: inline-block;
     }
-    
+    .body{
+    background-position: center;
+    }
   }
 
   .error-message {
