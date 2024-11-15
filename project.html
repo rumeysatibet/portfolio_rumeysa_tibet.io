@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projelerim</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <nav class="naw" >
+      <a href="#"></a>
+      <ul>
+        <li>
+          <a href="#deeplearning"
+            >Yol Hasarlarının Derin Öğrenme ile Tespiti</a
+          >
+        </li>
+        <li><a href="#imageprocessing">Görüntü işleme İle Yüz Tanıma Sistemi</a></li>
+        <li>
+          <a href="#application">Java ile Mobil ve Web Tabanlı Çukur ve Buzlanma Tespiti Uygulaması</a>
+        </li>
+      </ul>
+    </nav>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="İsim arayın.." title="Bir isim yazın">
+    <div class="header" style="background-size: cover; height: auto;">
+      <h3 style="color: #b19f9e; font-size: x-large; padding: 10%">
+        Geliştirmiş olduğum projelere erişimek için sayfayı aşağı
+        kaydırabilirsiniz. İlginizi çeken projelere daha hızlı erişmek için
+        yukarıdaki navigasyon çubuğunu kullanabilirsiniz.
+      </h3>
+     
+    </div>
+<div class="projectcontainer">
+    <div id="deeplearning" style="background-color:#19181a;">
+        <h3 style="color: #b19f9e; font-size: x-large; text-align: center; ">
+            Yol Hasarlarının Derin Öğrenme ile Tespiti
+          </h3>
+          
+    <div class="image">
+        <img src="images/deeplearning.png" alt="Yol Hasar Tespit Sistemi" style="width: 400%;
+        max-width: 500px; align-items: center" />
+    </div>
+    
+    <div class="projecttext">
+    <p  >Bu projede yol hasarlarını sınıflandırmak için derin öğrenmenin sunduğu güçlü modelleme araçlarını kullanarak bir görüntü sınıflandırma modeli geliştirdim. Derin öğrenme tabanlı bir yaklaşımla, yol yüzeyindeki farklı hasar türlerini ayrıştırmayı ve sınıflandırmayı hedefledim.
+    </p>
+    <p  >
+        Evrişimsel Sinir Ağları (ESA) ile Derin Öğrenme Modeli: Modelin geliştirilmesinde, derin öğrenme kütüphanelerinden TensorFlow ve Keras’ı kullandım. ESA (Evrişimsel Sinir Ağları) mimarisi üzerine kurulu bu model, görüntü verilerindeki önemli öznitelikleri çıkararak sınıflandırmayı başarıyla gerçekleştirdi. ESA’nın katman yapısını tanımlamak ve ayarlamak için Keras’ın sade ve güçlü API’sini kullandım. Model katmanlarının eğitimi, veriyi detaylı bir şekilde işleyen konvolüsyon (evrişim) katmanlarından başlayarak özelliklerin odaklandığı tam bağlı katmanlara kadar uzanarak titizlikle tamamlandı.
+    </p>
+    <p  >
+        Veri Seti Hazırlığı ve Etiketleme Süreci: Eğitim verisini kendim hazırladım ve etikettim. Bu süreçte, modelin doğruluğunu artırmak amacıyla her yol hasarını doğru sınıflandırmak için geniş kapsamlı bir veri seti oluşturup bu veriyi etiketledim. LabelImg yazılımını kullanarak görüntülerdeki farklı hasar türlerini ayırarak belirgin sınıflar oluşturmayı sağladım. LabelImg’nin sağladığı XML formatında veriler, modelin eğitim sürecinde gerekli sınıflandırma bilgisini etkin bir şekilde model yapısına aktarmamda yardımcı oldu.
+    </p>
+    <p  >
+        Model Eğitimi ve Optimizasyonu: Derin öğrenme modelini eğitmek için TensorFlow’un sağladığı ileri düzey özellikleri kullandım. Modelin doğruluğunu artırmak adına, eğitim sürecinde veri genişletme (augmentation) teknikleriyle veri setini çeşitlendirdim. Çeşitli hiperparametre ayarlamalarıyla modelin öğrenme süresini optimize ettim ve doğruluk oranını yükselttim. Eğitim sürecinde karşılaştığım zorlukları aşmak için model mimarisi ve katman ayarlarında yaptığım iyileştirmeler sayesinde, modelin farklı hasar türlerini doğru bir şekilde tanımasını sağladım.
+    </p>
+    <p  >
+        Sınıflandırma Sonuçları: Yaptığım sınıflandırma çalışmasında, görüntülerdeki çeşitli yol kusurları farklı sınıflara ayrıldı. Örneğin; çizgisel çatlaklar "D00" olarak etiketlenirken, timsah çatlağı benzeri karmaşık yapılar "D20" sınıfına atandı. Bu sınıflandırma modeli, hasarların tipini ve yayılımını hızlı ve doğru bir şekilde tespit ederek yol durumuna dair önemli bir bilgi sağlar.
+    </p>
+    <p  >
+        Bu proje, derin öğrenme ve Python tabanlı kütüphaneleri kullanma konusundaki yeteneklerimi yansıtarak, yol yüzeyindeki farklı hasar türlerinin sınıflandırılması için güçlü ve etkili bir çözüm geliştirmemi sağladı.
+    </p>
+  </div>
+    </div>
+
+    <div id="imageprocessing" class="content">
+        <h3 style="color: #b19f9e; font-size: x-large; text-align: center;">
+           Görüntü işleme İle Yüz Tanıma Sistemi
+          </h3>
+    <div class="image">
+        <img src="images/imageprocessing.jpg" alt="Yüz Tanıma Sistemi" style="width: 400%;
+        max-width: 500px; align-items: center" />
+    </div>
+    <div class="projecttext">
+        <p >
+            Bu projede, Udemy’de tamamladığım OpenCV kursunda edindiğim bilgilerle bir yüz tanıma sistemi geliştirdim. Görüntü işleme tekniklerini kullanarak yüzlerin algılanması ve doğru bir şekilde sınıflandırılmasına odaklandım. Kurs, OpenCV’nin temel görüntü işleme araçlarını ve yüz tanıma işlemlerini nasıl daha verimli hale getirebileceğimi öğrenmemi sağladı. Böylece, öğrendiğim teknikleri projeme uygulayarak yüz tanıma sistemimi oluşturma fırsatı buldum.</p>
+        <p >
+            Yüz algılama ve özellik çıkarımı için OpenCV kütüphanesini kullanarak projemde başarılı sonuçlar elde ettim. Bu kütüphane, yüzlerin hızlı bir şekilde algılanması için çeşitli araçlar sunuyor; örneğin, Haarcascades ile yüz bölgesini belirleyip tespit edebildim. Aynı zamanda, NumPy ile görüntü verilerini dizi olarak düzenleyip gereken matematiksel işlemleri daha kolay ve hızlı bir şekilde gerçekleştirdim. Kurs sırasında öğrendiğim bu temel bilgiler, projeyi daha etkili ve doğru bir yapıda tamamlamama yardımcı oldu.
+        </p>
+        <p >
+            Geliştirme sürecinde, görüntü işleme tekniklerini uygulayarak yüzlerin net bir şekilde tanımlanmasını sağladım. Kontrast ayarlamaları, gürültü azaltma gibi işlemlerle yüz bölgelerindeki önemli özniteliklerin daha iyi tanımlanmasını mümkün hale getirdim. Udemy’deki OpenCV kursunun sağladığı bilgiler, yüz tanıma sistemini oluştururken Python ve görüntü işleme konusundaki becerilerimi güçlendirdi ve projeyi başarıyla tamamlamamda büyük katkı sağladı.
+        </p>
+    </div>
+    </div>
+
+    <div id="application" class="content">
+        <h3 style="color: #b19f9e; font-size: x-large; text-align: center;">
+            Java ile Mobil ve Web Tabanlı Çukur ve Buzlanma Tespiti Uygulaması
+          </h3>
+          <div class="image">
+            <img src="images/uygulama.png"style="width: 400%;
+        max-width: 450px; align-items: center">
+           
+          </div>
+          
+             </script> 
+        <div class="projecttext">
+        <p  >
+            Bu projede, kullanıcıların geçtiği konumlarda çukur veya buzlanma olup olmadığını belirten, hem mobil hem de web uyumlu bir uygulama geliştirdim. Java Swing kullanarak geliştirdiğim arayüz, kullanıcıların yol yüzeyi durumlarına dair bilgileri hızlı ve anlaşılır bir şekilde öğrenmesini sağlıyor. Uygulamanın temel amacı, yol kullanıcılarının karşılaşabileceği olası tehlikelere karşı güvenli bir yolculuk yapmalarını sağlamak. Uygulama, konum verileri üzerinden yol yüzeyindeki çukur veya buzlanma gibi durumları analiz ederek kullanıcıya gerekli uyarıları sunuyor ve yol durumu hakkında güncel bilgiler veriyor.
+        </p>
+        <p  >
+            Projenin veri tabanını SQL Workbench kullanarak yönetip uygulamanın veriye hızlı erişimini sağladım. SQL Workbench aracılığıyla, çukur ve buzlanma tespitleriyle ilgili verileri düzenli bir yapı içerisinde saklayarak veri tabanının performansını artırdım. Bu veri tabanındaki güncellemeler ve sorgular, uygulamanın kullanıcıya doğru ve zamanında bilgi sağlamasına katkıda bulundu. SQL Workbench'in esnekliği sayesinde, uygulamanın hem mobil hem de web tabanlı arayüzlerinde veriye güvenilir erişimi mümkün hale getirdim.
+        </p>
+        <p>
+            Java Swing ile masaüstü uygulama geliştirmeye yönelik güçlü bir arayüz oluştururken, Java’nın diğer frameworklerinden de yararlandım. Özellikle Spring ve Hibernate, veritabanı yönetimi ve güvenilir bir sunucu altyapısı için projemde önemli rol oynadı. Mobil uyumluluğa özel olarak, farklı ekran boyutlarına uyumlu bir tasarım ve kullanıcı deneyimi geliştirerek, kullanıcıların güncel yol durumlarını hem mobil cihazlardan hem de web üzerinden kolayca öğrenmesini sağladım. Bu proje, Java tabanlı mobil ve web geliştirme, veri tabanı yönetimi ve kullanıcı güvenliği konularındaki becerilerimi daha da güçlendirmemi sağladı.
+        </p>
+        </div>
+    </div>
+  </div>
+</div>
+<script>
+  function myFunction() {
+    var input, filter, projectcontainer, p, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    projectcontainer = document.getElementById("projectcontainer");
+    p = projectcontainer.getElementsByTagName("p");
+    
+    for (i = 0; i < p.length; i++) {
+        txtValue = p[i].textContent || p[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            p[i].style.display = "";
+        } else {
+            p[i].style.display = "none";
+        }
+    }
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+    <title>Hayal Gücünü Kodla Buluşturan Portföyüme Hoşgeldiniz!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="#"></a>
+      <ul>
+        <li>
+          <a class="active" target="_blank" href="#anasayfa">Anasayfa</a>
+        </li>
+        <li><a href="about.html">Hakkımda</a></li>
+        <li><a href="project.html">Projeler</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+    </nav>
+    <div class="header">
+      <h1>Hayal Gücünü Kodla Buluşturan Portföyüme Hoşgeldiniz!</h1>
+      <h3 style="color: #b19f9e; font-size: large">
+        Beni daha yakından tanımak ister misin? Yeteneklerimi, tutkularımı ve
+        hayata geçirdiğim projeleri keşfetmek için sayfamda bir yolculuğa çık.
+        Çalışmalarıma göz at ve beni ben yapan şeyleri keşfet.
+      </h3>
+      <p
+        id="demo"
+        style="
+          background-color: #19181a;
+          color: #cebc81;
+          text-align: center;
+          font-size: x-large;
+        "
+      ></p>
+    </div>
+
+      <script>
+        let myVar = setInterval(myTimer, 1000);
+        function myTimer() {
+          const d = new Date();
+
+          document.getElementById("demo").innerHTML =
+            "<div>" +
+            d.toLocaleTimeString() +
+            "<div style='margin-top: 20px;'></div>" +
+            "<div>" +
+            d.toLocaleDateString() +
+            "</div>"+ "<div style='margin-top: 100px;'></div>";
+        }
+      </script>
+    </div>
+    <div id="contact" class="container">
+     
+      <form name="Form" onsubmit="return validateForm()">
+        <h3 >Benimle İletişime Geçin!</h3> 
+        <label for ="name">Ad</label>
+        <input type="text" id="name" placeholder="Adınızı giriniz..." />
+        <span id="name-error" class="error-message"></span>
+        <label for ="surname">Soyad</label>
+        <input type="text" id="surname" placeholder="Soyadınızı giriniz..." />
+        <span id="surname-error" class="error-message"></span>
+        <label for ="email">E-mail</label>
+        <input type="text" id="email" name="email" placeholder="E-mail adresinizi giriniz..." />
+        <span id="text-error" class="error-message"></span>
+        <label for="subject">Subject</label>
+        <span id="email-error" class="error-message"></span>
+        <textarea id="subject" name="subject" placeholder="Mesajınızı yazın.." style="height:200px"></textarea>
+        <span id="subject-error" class="error-message"></span>
+        <input type="submit" value="Send" id="Button" name="submit"/>
+  
+      </form>
+     
+    </div>
+    <script src="script.js"></script>
+    <footer>Author: Rumeysa Tibet</footer>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hakkımda</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Courier New", monospace;
+      }
+
+      body {
+        background-color: #19181a;
+        color: #b19f9e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-size: cover;
+      }
+
+      .header {
+        font-size: 70px;
+        color: #479761;
+        text-shadow: 0px 0px 10px #479761;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      .container {
+        display: flex;
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .image {
+        flex: 1;
+      }
+
+      .image img {
+        width: 200%;
+        max-width: 300px;
+        border: 2px solid #a16e83;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        box-shadow: 0 0 5px #a16e83, 0 0 25px #a16e83;
+      }
+
+      .image:hover img {
+        transform: scale(1.1);
+      }
+
+      .content {
+        flex: 2;
+        font-size: 17px;
+        line-height: 1.6;
+      }
+
+      .content h5 {
+        font-size: 20px;
+        color: #a16e83;
+      }
+
+      .content p {
+        margin-bottom: 20px;
+      }
+
+      .readmore {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #a16e83;
+        box-shadow: 0 0 5px #a16e83, 0 0 25px #a16e83;
+        color: #19181a;
+        font-size: 17px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+      }
+
+      .readmore:hover {
+        background-color: #8d566e;
+      }
+
+      #more {
+        display: none;
+      }
+
+      @media screen and (max-width: 786px) {
+        .container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .image {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="header">Hakkımda</h1>
+    <div class="container">
+      <div class="image">
+        <img src="images/ben.jpeg" alt="Rumeysa TİBET" />
+      </div>
+      <div class="content">
+        <h5>Bilgisayar Mühendisliği Öğrencisi</h5>
+        <p>
+          Herkese merhaba, ben Rumeysa! Recep Tayyip Erdoğan Üniversitesi 4.
+          sınıf Bilgisayar Mühendisliği öğrencisiyim. Yapay zeka alanına ilgi
+          duyuyorum ve çeşitli yapay zeka projeleri tasarladım. Bu projelerimden
+          biriyle Teknofest finalistliği ve TÜBİTAK desteği kazandım.
+          <span id="dots">...</span>
+          <span id="more">
+            geliştirdiğim bu projelerde veri analizi, model oluşturma ve makine
+            öğrenimi gibi konularda çalışmalar yaptım. Web ve mobil uygulama
+            geliştirme alanında HTML, CSS ve JavaScript projeleriyle temel
+            beceriler edindim. Şu anda C# ve .NET frameworklerine odaklanarak
+            web uygulamaları geliştiriyorum ve yeni bir dil öğrenmek için Kotlin
+            üzerinde çalışmaya başladım. Boş vakitlerimde yüzme, zeka oyunları
+            ve puzzle gibi aktivitelerle zihnimi taze tutarak teknik bilgi
+            birikimimi ve hobilerimi bir araya getiriyorum. Sürekli öğrenme ve
+            gelişim benim için önemli, bu yolculukta kendimi her gün daha ileri
+            taşıyorum.
+          </span>
+        </p>
+        <button onclick="myFunction()" id="readmore" class="readmore">
+          Daha Fazla Oku
+        </button>
+        <script>
+          function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("readmore");
+
+            if (dots.style.display === "none") {
+              dots.style.display = "inline";
+              btnText.innerHTML = "Daha Fazla Oku";
+              moreText.style.display = "none";
+            } else {
+              dots.style.display = "none";
+              btnText.innerHTML = "Daha Az Oku";
+              moreText.style.display = "inline";
+            }
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
