@@ -223,6 +223,18 @@ input[type=submit]:hover{
     .image {
       margin-bottom: 20px;
     }
+
+        .header {
+      background-size: cover;
+    }
+
+    .ul {
+      margin: 0;
+    }
+
+    .li {
+      display: inline-block;
+    }
     
   }
 
