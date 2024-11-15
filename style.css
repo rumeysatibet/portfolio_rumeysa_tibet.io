@@ -3,7 +3,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding:0;
-    overflow:hidden;
+    overflow: hidden;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -228,15 +228,8 @@ input[type=submit]:hover{
       background-size: cover;
     }
 
-    .ul {
-      margin: 0;
-    }
-
-    .li {
-      display: inline-block;
-    }
-    .body{
-    background-position: center;
+    .nav {
+         overflow: hidden;
     }
   }
 
